@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5D09015-C218-45D4-BC01-4823B7147D17}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sistema\Mensajes.cs" />
+    <Compile Include="Sistema\OpcionesCajasDeTexto.cs" />
+    <Compile Include="Sistema\OpcionesSistema.cs" />
+    <Compile Include="Vista\Administracion\FrmConfiguracionSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Administracion\FrmConfiguracionSystem.Designer.cs">
+      <DependentUpon>FrmConfiguracionSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Alertas\Cargando.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Alertas\Cargando.Designer.cs">
+      <DependentUpon>Cargando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Clientes\FrmLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Clientes\FrmLista.Designer.cs">
+      <DependentUpon>FrmLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Clientes\FrmNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Clientes\FrmNuevo.Designer.cs">
+      <DependentUpon>FrmNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Compras\FrmArchivar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Compras\FrmArchivar.Designer.cs">
+      <DependentUpon>FrmArchivar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Compras\FrmLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Compras\FrmLista.Designer.cs">
+      <DependentUpon>FrmLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Compras\FrmNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Compras\FrmNuevo.Designer.cs">
+      <DependentUpon>FrmNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Equipos\FrmLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Equipos\FrmLista.Designer.cs">
+      <DependentUpon>FrmLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Equipos\FrmNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Equipos\FrmNuevo.Designer.cs">
+      <DependentUpon>FrmNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\IngresoEgreso\FrmLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\IngresoEgreso\FrmLista.Designer.cs">
+      <DependentUpon>FrmLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\IngresoEgreso\FrmNuevoIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\IngresoEgreso\FrmNuevoIngreso.Designer.cs">
+      <DependentUpon>FrmNuevoIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Inventario\FrmInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Inventario\FrmInventario.Designer.cs">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Inventario\FrmLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Inventario\FrmLista.Designer.cs">
+      <DependentUpon>FrmLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Inventario\FrmTomaInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Inventario\FrmTomaInventario.Designer.cs">
+      <DependentUpon>FrmTomaInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Proveedor\FrmLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Proveedor\FrmLista.Designer.cs">
+      <DependentUpon>FrmLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Proveedor\FrmNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Proveedor\FrmNuevo.Designer.cs">
+      <DependentUpon>FrmNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Salida\FrmLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Salida\FrmLista.Designer.cs">
+      <DependentUpon>FrmLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Salida\FrmSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Salida\FrmSalida.Designer.cs">
+      <DependentUpon>FrmSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Salida\Reportes\FrmReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Salida\Reportes\FrmReporte.Designer.cs">
+      <DependentUpon>FrmReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Salida\Reportes\rA4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vista\Salida\Reportes\rA4.Designer.cs">
+      <DependentUpon>rA4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Salida\Reportes\VistaA4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vista\Salida\Reportes\VistaA4.Designer.cs">
+      <DependentUpon>VistaA4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Usuario\FrmNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Usuario\FrmNuevo.Designer.cs">
+      <DependentUpon>FrmNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Vista\Administracion\FrmConfiguracionSystem.resx">
+      <DependentUpon>FrmConfiguracionSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Alertas\Cargando.resx">
+      <DependentUpon>Cargando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Clientes\FrmLista.resx">
+      <DependentUpon>FrmLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Clientes\FrmNuevo.resx">
+      <DependentUpon>FrmNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Compras\FrmArchivar.resx">
+      <DependentUpon>FrmArchivar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Compras\FrmLista.resx">
+      <DependentUpon>FrmLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Compras\FrmNuevo.resx">
+      <DependentUpon>FrmNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Equipos\FrmLista.resx">
+      <DependentUpon>FrmLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Equipos\FrmNuevo.resx">
+      <DependentUpon>FrmNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\IngresoEgreso\FrmLista.resx">
+      <DependentUpon>FrmLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\IngresoEgreso\FrmNuevoIngreso.resx">
+      <DependentUpon>FrmNuevoIngreso.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Inventario\FrmInventario.resx">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Inventario\FrmLista.resx">
+      <DependentUpon>FrmLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Inventario\FrmTomaInventario.resx">
+      <DependentUpon>FrmTomaInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Proveedor\FrmLista.resx">
+      <DependentUpon>FrmLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Proveedor\FrmNuevo.resx">
+      <DependentUpon>FrmNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Salida\FrmLista.resx">
+      <DependentUpon>FrmLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Salida\FrmSalida.resx">
+      <DependentUpon>FrmSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Salida\Reportes\FrmReporte.resx">
+      <DependentUpon>FrmReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Salida\Reportes\rA4.resx">
+      <DependentUpon>rA4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Salida\Reportes\VistaA4.resx">
+      <DependentUpon>VistaA4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Usuario\FrmNuevo.resx">
+      <DependentUpon>FrmNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{279A65F3-788E-4E74-A160-E6DEAB08F842}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{0f836bd0-f150-4b99-80cb-db8af11f725c}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Herramientas\Wrench_85px.png" />
+    <None Include="Herramientas\Workstation_100px.png" />
+    <None Include="Herramientas\Workstation_85px.png" />
+    <None Include="Herramientas\Up Down Arrow _100px.png" />
+    <None Include="Herramientas\Up Down Arrow _85px.png" />
+    <None Include="Herramientas\Staff_100px.png" />
+    <None Include="Herramientas\Staff_85px.png" />
+    <None Include="Herramientas\Shopping Cart_85px.png" />
+    <None Include="Herramientas\perfil.jpg" />
+    <None Include="Herramientas\Exchange_100px.png" />
+    <None Include="Herramientas\Exchange_85px.png" />
+    <None Include="Herramientas\Data Transfer_100px.png" />
+    <None Include="Herramientas\Computer Support_100px.png" />
+    <None Include="Herramientas\Computer Support_85px.png" />
+    <None Include="Herramientas\Cash in Hand_85px.png" />
+    <None Include="Herramientas\Administrative Tools_100px.png" />
+    <Content Include="Herramientas\fondo_login.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

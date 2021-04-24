@@ -1,0 +1,9 @@
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaDatos\bin\Debug\CapaDatos.dll
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaDatos\bin\Debug\EntityFramework.dll
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaDatos\bin\Debug\EntityFramework.SqlServer.dll
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaDatos\bin\Debug\EntityFramework.xml
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaDatos\bin\Debug\EntityFramework.SqlServer.xml
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaDatos\obj\Debug\CapaDatos.dll
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaDatos\obj\Debug\CapaDatos.pdb

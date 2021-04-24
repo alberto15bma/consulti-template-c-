@@ -1,0 +1,15 @@
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaNegocio\bin\Debug\Dapper.dll
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaNegocio\bin\Debug\Dapper.pdb
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaNegocio\bin\Debug\Dapper.xml
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaNegocio\bin\Debug\CapaNegocio.dll.config
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaNegocio\bin\Debug\EntityFramework.dll
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaNegocio\bin\Debug\EntityFramework.SqlServer.dll
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaNegocio\bin\Debug\EntityFramework.xml
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaNegocio\bin\Debug\EntityFramework.SqlServer.xml
+C:\PROYECTOS 2021\Prueba practica\Prueba\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
